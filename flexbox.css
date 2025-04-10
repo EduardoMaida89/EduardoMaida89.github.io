@@ -138,6 +138,17 @@ width: 100%;
 .btn{
     cursor: pointer;
 }
+.box2 {
+    margin-bottom: 16px;
+    margin-left: 20px;
+}
+.box3 {
+    margin-left: 30px;
+    align-items: flex-end;
+}
+.box2 h2{
+    margin-bottom: 30px;
+}
 .footer-search {
     width: 100%;
     display: flex;
@@ -176,15 +187,23 @@ width: 100%;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
   .footer-search button:hover {
     background-color: #e65c00;
   }
   .box h2{
-margin-bottom: 15px;
-
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 90px;
+    
   }
-  .contenido2 {
+  .box p{
+    align-items: center;
+    justify-content: center;
+    display: flex;  
+   
+  }
+   .contenido2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,6 +217,7 @@ margin-bottom: 15px;
 }
 .seccion-3 {
     width: 20vh;
+    margin-left: 0px;
 }
 .navi{
     display: flex;
@@ -208,6 +228,7 @@ margin-bottom: 15px;
     cursor: pointer;
     margin-right: 10px;
     border-radius: 15px;
+    justify-items: left;
     padding: 15px;
     background-color: rgba(208, 216, 214, 0.87);
 }
