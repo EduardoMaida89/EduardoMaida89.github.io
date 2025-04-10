@@ -22,8 +22,8 @@
 .nav li{
     cursor: pointer;
     border-radius: 10px;
-    padding: 15px;
-    background-color: rgba(76, 80, 79, 0.76);
+    padding: 8px;
+    background-color: rgba(208, 216, 214, 0.87);
 }
 .nav li:hover{
     background-color: brown;
@@ -36,7 +36,7 @@
 }
 .servicios div h2{
     text-align: left;
-    margin-left: 300px;
+    margin-left: 350px;
 }
 .sub-servicio{
     display: flex;
@@ -50,6 +50,10 @@
     justify-content: space-around;
     width: 50vh;
 }
+.sub-servicio div h3 {
+margin-bottom: 100px;
+
+}
 .sub-servicio div img{
     width: 100%;
 }
@@ -61,6 +65,7 @@
 .cajas{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 50px;
 }
 .sub-caja{
     width: 30vh;
@@ -121,6 +126,10 @@ width: 100%;
 .modal-contenido img{
     width: 80%;
 }
+.modal-contenido img h2 p{
+
+    margin-bottom: 10px;
+}
 /**/
 .mostrar-modal{
     opacity: 1;
@@ -128,4 +137,80 @@ width: 100%;
 }
 .btn{
     cursor: pointer;
+}
+.footer-search {
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    margin-top: 20px;
+  }
+  
+  .footer-search h2 {
+    color: #131111;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  
+  .footer-search form {
+    display: flex;
+    gap: 10px;
+    max-width: 400px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .footer-search input[type="text"] {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+  }
+  
+  .footer-search button {
+    padding: 8px 16px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer-search button:hover {
+    background-color: #e65c00;
+  }
+  .box h2{
+margin-bottom: 15px;
+
+  }
+  .contenido2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenido2 div{
+    width: 50vh;
+}
+.contenido div ul{
+    align-items: start;
+
+}
+.seccion-3 {
+    width: 20vh;
+}
+.navi{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.navi li{
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: rgba(208, 216, 214, 0.87);
+}
+.navi li:hover{
+    background-color: brown;
 }
