@@ -32,10 +32,17 @@
 .servicios{
     display: flex;
     flex-direction: column;
-    align-items: center ;
+    justify-content: center;
+}
+.servicios div h2{
+    text-align: left;
+    margin-left: 300px;
 }
 .sub-servicio{
     display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
 }
 .sub-servicio div{
     display: flex;
@@ -46,9 +53,7 @@
 .sub-servicio div img{
     width: 100%;
 }
-.img-1{
-    width: 90% !important;
-}
+
 .sub-servicio div button{
     width: 20%;
 }
@@ -59,6 +64,7 @@
 }
 .sub-caja{
     width: 30vh;
+    margin: 20px    ;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -72,13 +78,54 @@ width: 100%;
 .imagen-btn{
     position: relative;
     display: flex;
-    align-items: end;
+    align-items: center;
+    justify-content: center;
 }
 .imagen-btn button{
     text-align: center;
     position: absolute;
-    padding: 30px;
-    width: 50%;
+    padding: 15px;
     top: 0;
     left: 0;
+}
+.imagen-btn div{
+    position: absolute;
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+.imagen-btn div button{
+    padding: 30px;
+}
+.modal{
+    pointer-events: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(37, 37, 37, .5);
+}
+.modal-contenido{
+    background-color: white;
+    width: 50vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.modal-contenido img{
+    width: 80%;
+}
+/**/
+.mostrar-modal{
+    opacity: 1;
+    pointer-events: unset;
+}
+.btn{
+    cursor: pointer;
 }

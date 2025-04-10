@@ -22,12 +22,12 @@
     </div>
     <div class="servicios">
         <div>
-            <h2>SERVICIOS</h2>
+            <h2>NUESTROS SERVICIOS</h2>
         </div>
         <div class="sub-servicio">
             <div>
-                <h3>Titulo</h3>
-                <button>Boton</button>
+                <h3>Branding</h3>
+                <button id="btn-modal">Boton</button>
             </div>
             <div>
                 <img src="https://res.cloudinary.com/vistaprint/images/c_scale,w_448,h_448,dpr_2/f_auto,q_auto/v1705580343/ideas-and-advice-prod/en-us/adidas/adidas.png?_i=AA" alt="">
@@ -35,13 +35,14 @@
         </div>
         <div class="sub-servicio">
             <div>
-                <h3>Titulo</h3>
+                <h3>PRUEBA</h3>
                 <button>Boton</button>
             </div>
             <div class="imagen-btn">
                 <img class="img-1" src="https://res.cloudinary.com/vistaprint/images/c_scale,w_448,h_448,dpr_2/f_auto,q_auto/v1705580343/ideas-and-advice-prod/en-us/adidas/adidas.png?_i=AA" alt="">
                 
-                <button>Boton</button>
+                    <button>Boton</button>
+               
             </div>
         </div>
         <div class="sub-servicio">
@@ -63,7 +64,6 @@
             </div>
         </div>
     </div>
-
     <div class="cajas">
         <div class="sub-caja">
             <img src="https://res.cloudinary.com/vistaprint/images/c_scale,w_448,h_448,dpr_2/f_auto,q_auto/v1705580343/ideas-and-advice-prod/en-us/adidas/adidas.png?_i=AA" alt="">
@@ -94,5 +94,31 @@
             <button>Boton</button>
         </div>
     </div>
+    <div class="modal" id="modal">
+        <div class="modal-contenido">
+            <img src="img/personajes.jpg" alt="">
+            <h2>titulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nesciunt blanditiis doloribus iure ullam, doloremque eos voluptatum vel eius maxime?</p>
+            <button id="btn-cerrar">Cerrar</button>
+            <div id="nombre-contenido">
+
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+   
+    const btn_modal = document.getElementById('btn-modal');
+    const modal = document.getElementById('modal');
+    const btn_cerrar = document.getElementById('btn-cerrar');
+    
+    
+    btn_modal.addEventListener('click',()=>{
+        modal.classList.add('mostrar-modal');
+    })
+
+    btn_cerrar.addEventListener('click',()=>{
+        modal.classList.remove('mostrar-modal');
+    })
+</script>
 </html>
